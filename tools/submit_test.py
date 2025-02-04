@@ -50,4 +50,3 @@ if os.path.isfile(fname):
   if args.dry == "False":
     p = subprocess.Popen(command, stdout=subprocess.PIPE, shell=True)
     print(p.communicate()[0].decode('utf-8'))
-

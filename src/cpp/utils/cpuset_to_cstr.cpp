@@ -34,4 +34,3 @@ char *tbsla::cpp::utils::cpuset_to_cstr(cpu_set_t *mask, char *str)
     *ptr = 0;
     return(str);
 }
-

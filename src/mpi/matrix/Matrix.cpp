@@ -788,4 +788,3 @@ double * tbsla::mpi::Matrix::page_rank_opticom(int maxIter, double beta, double 
 
     return morceau_new_q;
 }
-

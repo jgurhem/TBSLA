@@ -97,4 +97,3 @@ void tbsla::hpx_::MatrixCOO::wait() {
     tiles[i].get_data().wait();
   }
 }
-

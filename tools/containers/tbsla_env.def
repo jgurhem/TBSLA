@@ -25,4 +25,3 @@ From: ubuntu:groovy
 
 %environment
   . /spack/share/spack/setup-env.sh
-

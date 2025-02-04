@@ -94,4 +94,3 @@ int tbsla::mpi::MatrixSCOO::read_bin_mpiio(MPI_Comm comm, std::string filename, 
 
   return 0;
 }
-

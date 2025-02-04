@@ -24,4 +24,3 @@ size_t tbsla::utils::range::pflv(size_t size, int local_pos, int number_pos) {
   }
   return n;
 }
-

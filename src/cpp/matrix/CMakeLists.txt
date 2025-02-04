@@ -28,4 +28,3 @@ if(TBSLA_ENABLE_OMP)
 endif()
 
 install(DIRECTORY ${PROJECT_SOURCE_DIR}/cpp/include/tbsla DESTINATION "include")
-

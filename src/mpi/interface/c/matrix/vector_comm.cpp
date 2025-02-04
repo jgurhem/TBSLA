@@ -84,4 +84,3 @@ C_CPP_Vector_t *C_MPI_redistribute(MPI_Comm comm, C_CPP_Vector_t *v, int bn_row,
     return C_MPI_reduce_gather(comm, v, bn_row, bn_col, lpr, lpc, lgr, lgc);
   }
 }
-
