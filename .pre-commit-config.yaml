@@ -5,7 +5,7 @@ repos:
       - id: clang-format
         args: [--style=Google] # Other coding style: Google, LLVM, GNU, Chromium, Microsoft, Mozilla, WebKit.
   - repo: https://github.com/pre-commit/pre-commit-hooks
-    rev: v4.4.0
+    rev: v5.0.0
     hooks:
       - id: check-executables-have-shebangs
       - id: check-merge-conflict
