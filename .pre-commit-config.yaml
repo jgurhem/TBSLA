@@ -4,24 +4,4 @@ repos:
     hooks:
       - id: clang-format
         args: [--style=Google] # Other coding style: Google, LLVM, GNU, Chromium, Microsoft, Mozilla, WebKit.
-  - repo: https://github.com/pre-commit/pre-commit-hooks
-    rev: v5.0.0
-    hooks:
-      - id: check-executables-have-shebangs
-      - id: check-merge-conflict
-      - id: check-shebang-scripts-are-executable
-      - id: check-symlinks
-      - id: check-json
-      - id: check-yaml
-        args: [ --allow-multiple-documents]
-        exclude: charts/.*/template\.*
-      - id: end-of-file-fixer
-        exclude: ".*md$"
-      - id: pretty-format-json
-        args:
-          - "--autofix"
-          - "--indent=2"
-          - "--no-sort-keys"
-      - id: mixed-line-ending
-        args:
-          - "--fix=lf"
+
