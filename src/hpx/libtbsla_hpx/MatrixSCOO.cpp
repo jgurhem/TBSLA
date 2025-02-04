@@ -100,4 +100,3 @@ void tbsla::hpx_::MatrixSCOO::wait() {
     tiles[i].get_data().wait();
   }
 }
-

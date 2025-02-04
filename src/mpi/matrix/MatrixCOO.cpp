@@ -173,4 +173,3 @@ double* tbsla::mpi::MatrixCOO::page_rank(MPI_Comm comm, double beta, double epsi
   delete[] buf2;
   return b;
 }
-

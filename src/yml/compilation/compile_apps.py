@@ -78,4 +78,3 @@ if os.path.isfile(stub_file):
 else:
   with open(stub_file, "w") as fp:
     fp.writelines(resc)
-

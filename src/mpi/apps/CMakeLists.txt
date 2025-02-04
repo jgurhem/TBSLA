@@ -35,4 +35,3 @@ if(TBSLA_ENABLE_OMP)
   target_link_libraries(tbsla_perf_cg_mpi_omp PUBLIC tbsla_omp)
   install(TARGETS tbsla_perf_cg_mpi_omp DESTINATION bin)
 endif()
-

@@ -105,4 +105,3 @@ endmacro (MULTIPASS_SOURCE_RUNS)
 macro (MULTIPASS_C_SOURCE_RUNS includes libraries source runs)
   multipass_source_runs("${includes}" "${libraries}" "${source}" ${runs} "C")
 endmacro (MULTIPASS_C_SOURCE_RUNS)
-

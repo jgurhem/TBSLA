@@ -101,4 +101,3 @@ void tbsla::hpx_::MatrixDENSE::wait() {
     tiles[i].get_data().wait();
   }
 }
-

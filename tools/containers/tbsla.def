@@ -14,4 +14,3 @@ From: ./tbsla_env.sif
   cmake -DCMAKE_BUILD_TYPE=Release -DTBSLA_ENABLE_OMP=ON -DTBSLA_ENABLE_MPI=ON -DCMAKE_CXX_COMPILER=g++ -DCMAKE_INSTALL_PREFIX:PATH=/usr/local ..
   make -j 8
   make install
-

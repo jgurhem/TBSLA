@@ -244,6 +244,3 @@ std::vector<int> tbsla::utils::values_generation::brain_columns(std::size_t i, s
   }
   return cols;
 }
-
-
-
