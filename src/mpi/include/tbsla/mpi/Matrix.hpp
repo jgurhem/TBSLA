@@ -24,12 +24,14 @@ class Matrix : public virtual tbsla::cpp::Matrix {
     virtual std::vector<MPI_Comm> create_comms(MPI_Comm comm, std::unordered_map<int,std::vector<int> > recv_map);
     virtual void redistribute_vector(std::vector<MPI_Comm> comms, double* r, const double* v, double* buffer, double* buffer2, std::unordered_map<int,std::vector<int> > recv_map);
     virtual inline void make_stochastic(MPI_Comm comm, double* s, double* buffer, double* buffer2);
+    virtual inline void make_diagonally_dominant(MPI_Comm comm, double* s, double* buffer);
     virtual inline void Ax_(MPI_Comm comm, double* r, const double* v, int vect_incr = 0);
     virtual double* a_axpx_(MPI_Comm comm, const double* v, int vect_incr = 0);
     virtual inline void AAxpAx(MPI_Comm comm, double* r, const double* v, double *buffer, double* buffer2, double *buffer3, int vect_incr = 0);
     virtual inline void AAxpAxpx(MPI_Comm comm, double* r, const double* v, double *buffer, double* buffer2, double *buffer3, int vect_incr = 0);
     virtual double* page_rank(MPI_Comm comm, double beta, double epsilon, int max_iterations, int &nb_iterations_done);
     virtual double * page_rank_opticom(int maxIter, double beta, double epsilon, int &nb_iterations_done);
+    virtual double * conjugate_gradient_opticom(int maxIter, double beta, double epsilon, int &nb_iterations_done);
     virtual void CG(MPI_Comm comm, double* v, double* r, int max_iterations, int &nb_iterations_done);
     int const get_gnnz() {return gnnz;};
     long int const compute_sum_nnz(MPI_Comm comm);
@@ -39,12 +41,14 @@ class Matrix : public virtual tbsla::cpp::Matrix {
     using tbsla::cpp::Matrix::fill_cqmat;
     using tbsla::cpp::Matrix::fill_random;
     using tbsla::cpp::Matrix::fill_brain;
+    using tbsla::cpp::Matrix::fill_cdistrib;
     using tbsla::cpp::Matrix::spmv;
     using tbsla::cpp::Matrix::Ax;
 	using tbsla::cpp::Matrix::get_row_sums;
 	using tbsla::cpp::Matrix::normalize_rows;
 	using tbsla::cpp::Matrix::get_col_sums;
 	using tbsla::cpp::Matrix::normalize_cols;
+    using tbsla::cpp::Matrix::set_diag;
     using tbsla::cpp::Matrix::read;
     using tbsla::cpp::Matrix::write;
 

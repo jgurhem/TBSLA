@@ -377,7 +377,11 @@ void tbsla::cpp::MatrixCOO::fill_brain(int n_row, int n_col, int* neuron_type, s
   this->NC = NC;
 
 }
+//TODO : fill_cdistribute COO
 
+void tbsla::cpp::MatrixCOO::fill_cdistrib(int n_row, int n_col, int nnz, int pr, int pc, int NR, int NC) {
+
+}
 // TODO : normalization for COO
 void tbsla::cpp::MatrixCOO::get_row_sums(double* s) {
   
@@ -392,6 +396,10 @@ void tbsla::cpp::MatrixCOO::get_col_sums(double* s) {
 }
 
 void tbsla::cpp::MatrixCOO::normalize_cols(double* s) {
+
+}
+
+void tbsla::cpp::MatrixCOO::set_diag(double* s) {
 
 }
 
